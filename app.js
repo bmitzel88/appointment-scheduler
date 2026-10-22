@@ -26,6 +26,11 @@ app.get('/confirm', (req, res) =>{
     res.sendFile(`${import.meta.dirname}/views/confirm.html`);
 });
 
+// Add admin route
+app.get('/admin', (req, res) =>{
+    res.send(appointments);
+});
+
 app.post('/submit-appointment', (req, res) => {
     const appointment = req.body;
     appointment['timestamp'] = new Date();
