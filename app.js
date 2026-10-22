@@ -28,7 +28,8 @@ app.get('/confirm', (req, res) =>{
 
 app.post('/submit-appointment', (req, res) => {
     const appointment = req.body;
-    
+    appointment['timestamp'] = new Date();
+
     console.log(appointment);
 
     // Add appointment to the array of appointments
