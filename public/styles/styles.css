@@ -1,3 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(155, 154, 189);
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background-color: rgb(213, 213, 222);
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-radius: .75rem;
+}
+
+header {
+    background-color: rgb(47, 47, 116);
+    width: 100%;
+    border-radius: .75rem .75rem 0 0;
+}
+
+h1, h2 {
+    padding-left: 1rem;
+}
+
+h1 {
+    color: rgb(239, 224, 224)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 0px 10px;
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    width: 100%;
+    border: 1px solid rgb(55, 55, 118);
+    border-radius: .25rem;
+    padding: .75rem;
+}
+
+label {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
 .err {
     color: darkred;
     display: none;
