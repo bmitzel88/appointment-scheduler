@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+#appointment-form {
+    padding: 0 50px;
+}
+
 body {
     background-color: rgb(155, 154, 189);
     margin: 0;
@@ -22,31 +26,39 @@ header {
     border-radius: .75rem .75rem 0 0;
 }
 
-h1, h2 {
+h1 {
+    color: rgb(239, 224, 224);
+    padding: 1rem;
     padding-left: 1rem;
 }
 
-h1 {
-    color: rgb(239, 224, 224)
+h2 {
+    color: rgb(47, 47, 116);
+    padding-left: 50px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
-    padding: 0px 10px;
 }
 
-input[type="text"], input[type="date"], input[type="time"] {
+input[type="text"], input[type="date"], input[type="time"], #submit {
     width: 100%;
     border: 1px solid rgb(55, 55, 118);
     border-radius: .25rem;
     padding: .75rem;
 }
 
+#submit {
+    background-color: rgb(81, 81, 151);
+    color: rgb(239, 224, 224);
+}
+
 label {
     display: block;
     padding-bottom: 0.5rem;
+    color: rgb(76, 64, 135);
 }
 
 .err {
